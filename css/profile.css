@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Great Vibes";
   src: url("font/GreatVibes-Regular.ttf") format("ttf");
+  font-display: fallback;
 }
 
 html,
