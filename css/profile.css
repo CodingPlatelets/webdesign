@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Great Vibes";
+  src: url("font/GreatVibes-Regular.ttf") format("ttf");
+}
+
 html,
 body {
   background: #fabf54;
@@ -10,6 +15,107 @@ body {
   transform: translate(-50%, 0%);
   width: 90vmin;
   height: 90vmin;
+}
+
+.text-value {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* Black w/opacity/see-through */
+  color: white;
+  border: 5px solid #f1f1f1;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  padding: 20px;
+  /* text-align: center; */
+}
+
+.text-value h1 {
+  color: #cef0d4;
+  font-family: "Great Vibes", cursive;
+  font-size: 105px;
+  line-height: 160px;
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: 40px;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
+}
+
+.button-start {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: block;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-start::after,
+.button-start::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+
+.button-start::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.button-start::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-start:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-start:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-start:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
 }
 
 .cartoon div {

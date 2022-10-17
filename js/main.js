@@ -1,7 +1,7 @@
 /*
  * @LastEditors: platelets wenkanedward@gmail.com
  * @Date: 2022-10-15 15:17:48
- * @LastEditTime: 2022-10-15 20:35:36
+ * @LastEditTime: 2022-10-16 10:59:03
  * Copyright (c) 2022 by platelets email: wenkanedward@gmail.com, All Rights Reserved.
  */
 // load page in background
@@ -14,7 +14,7 @@ function changeBackground() {
 }
 
 const base = document.getElementById("base");
-base.style.backgroundImage = `url(./img/back/back5.jpg)`;
+base.style.backgroundImage = `url(./img/back/back0.jpg)`;
 window.addEventListener("load", changeBackground);
 function changeImg() {
   base.style.backgroundImage = `url(./img/back/back${randomInt(

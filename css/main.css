@@ -14,7 +14,7 @@ html {
 
   /* Full height */
   height: 100%;
-
+  width: 100%;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -72,12 +72,12 @@ html {
 
 .button-start::after,
 .button-start::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: -99999;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .button-start::before {
