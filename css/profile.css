@@ -1,12 +1,13 @@
 @font-face {
   font-family: "Great Vibes";
-  src: url("font/GreatVibes-Regular.ttf") format("ttf");
+  src: url("../font/GreatVibes-Regular.ttf") format("truetype");
   font-display: fallback;
 }
 
 html,
 body {
-  background: #fabf54;
+  background-image: linear-gradient(#102cad, red);
+  height: 100%;
 }
 
 .cartoon {
@@ -40,6 +41,7 @@ body {
 }
 
 .text-value h1 {
+  user-select: none;
   color: #cef0d4;
   font-family: "Great Vibes", cursive;
   font-size: 105px;
@@ -49,6 +51,17 @@ body {
   margin-top: 40px;
   text-align: center;
   text-shadow: 0 1px 1px #fff;
+}
+
+.text-value h1:hover {
+  color: red;
+}
+
+.text-value p::selection {
+  background-color: #ff003c;
+  color: #162962;
+  font-size: 50px;
+  line-height: 50px;
 }
 
 .button-start {

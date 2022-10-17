@@ -1,8 +1,33 @@
+@font-face {
+  font-family: "Great Vibes";
+  src: url("../font/GreatVibes-Regular.ttf") format("truetype");
+  font-display: fallback;
+}
+
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
   font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+video {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+  filter: grayscale(50%) blur(9px);
+  z-index: -11;
+}
+
+source {
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
 }
 
 body,
@@ -22,28 +47,28 @@ body,
   width: 100%;
 }
 
-.container .bg-image {
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
-  height: 95%;
-
-  width: 95%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition-property: background;
-  transition-duration: 600ms;
-  transition-timing-function: ease;
+.container h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  user-select: none;
+  color: #cef0d4;
+  font-family: "Great Vibes", cursive;
+  font-size: 105px;
+  line-height: 105px;
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: 40px;
+  text-align: center;
+  text-shadow: 0 2px 2px #fff;
 }
 
 .container .nav {
-  background-color: #fff;
+  background-color: rgb(220, 212, 212);
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -63,7 +88,7 @@ body,
 }
 
 .nav input:checked ~ .menu {
-  width: 650px; 
+  width: 650px;
 }
 
 .menu li {
