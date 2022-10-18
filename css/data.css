@@ -1,12 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background: -webkit-linear-gradient(
-      top,
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 0.8)
-    ),
-    url("https://populous.com/wp-content/uploads/2012/02/LIVESTRONGSportingPark-KansasCity-InteriorSeating.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,0 +1,136 @@
+body {
+  font-family: Open Sans, sans-serif;
+  color: #777; 
+  margin-top: 100px;
+}
+
+.title-heading {
+  letter-spacing: 3px;
+  padding-top: 150px;
+
+}
+.margin {
+  margin-top: 100px;
+}
+
+.img-face {
+  padding-top: 20px;
+  width: 450px;
+  margin: 0 auto;
+
+}
+
+.name-span {
+  font-size: 64px;
+
+}
+
+.quote {
+  margin-top: 90px;
+  font-size: 200%;
+
+}
+
+.dates {
+  margin-top: 20px;
+  font-size: 28px;
+  letter-spacing: 1px;
+
+}
+
+.short-bio {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0px 10% 10px 10%;
+  text-align: justify;
+
+}
+
+.strong-inline-text {
+  font-weight: bold;
+
+}
+
+.detail-box {
+  height: 120px;
+  margin: 5px 5px;
+  background-color: #eee;
+  width: 48%;
+
+  
+}
+
+.detail-box p {
+  padding: 10px;
+
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 32px;
+  margin-top: 40px;
+
+}
+
+.section-title h2 { 
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+
+.site-footer {
+  background-color: #eee;
+  text-align: center;
+  line-height: 60px;
+  height: 60px;
+  margin-top: 60px;
+
+}
+
+.award-list {
+  font-size: 18px;
+
+}
+
+.steve-circle {
+  margin-top: 64px;
+  border: 3px dotted #aaa;
+  padding: 10px;
+
+}
+
+.last-quote {
+  margin-top: 200px;
+  font-size: 28px;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  .title-heading {
+    padding-top: 20px;
+
+  }
+  .detail-box {
+    width: 95%!important;
+    margin: 5 auto;
+
+  }
+  .last-quote {
+    position: relative;
+    top: -100px!important;
+    padding-right: 20px;
+    padding-left: 20px;
+
+  }
+  
+}
+
+@media only screen and (max-width: 992px) {
+  .title-heading {
+    padding-top: 20px;
+
+
+}
+  
